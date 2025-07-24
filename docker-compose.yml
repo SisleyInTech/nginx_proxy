@@ -30,6 +30,7 @@ services:
 
 networks:
   proxy:
+    name: proxy     # aquí forzamos el nombre real "proxy"
 
 volumes:
   proxy_certs:
