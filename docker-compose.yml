@@ -29,6 +29,7 @@ services:
       - proxy_vhost.d:/etc/nginx/vhost.d
       - proxy_html:/usr/share/nginx/html
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - acme_sh:/etc/acme.sh
     networks:
       - proxy
 
@@ -40,3 +41,4 @@ volumes:
   proxy_certs:
   proxy_vhost.d:
   proxy_html:
+  acme_sh:
